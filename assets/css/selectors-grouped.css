@@ -1,0 +1,28 @@
+h1,
+h3,
+h5 {
+  color:blue;
+}
+
+h2,
+h4,
+h6 {
+  color:crimson;
+}
+
+ol,
+ul {
+  font-style: italic;
+}
+
+.text-blue {
+  color:blue;
+}
+
+.text-red {
+  color:red;
+}
+
+.text-green {
+  color:green;
+}
