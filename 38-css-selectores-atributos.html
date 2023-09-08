@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="assets/css/38-selectors-attributes.css" type "text/css">
+  <title>Selectores de atributos</title>
+</head>
+<body>
+  <h1>Selectores de atributos en CSS</h1>
+  
+ <ol>
+  <li>
+  <p><strong mycolor="darkmagenta">[att]</strong>: Este selector selecciona todos los elementos que tienen un atributo específico, sin importar su valor. Es útil cuando deseas aplicar un estilo a todos los elementos que tienen un cierto atributo, independientemente de su valor. Por ejemplo, si deseas aplicar un estilo a todos los elementos que tienen el atributo `data-toggle`, puedes hacerlo de la siguiente manera:</p>
+
+  <pre format="code">
+
+    [data-toggle] {
+      /* Estilos para elementos con el atributo data-toggle */
+    }
+  </pre>
+
+  <p><strong>Situación real</strong>: Puedes usar este selector para aplicar estilos a todos los botones en una página web que tienen atributos personalizados para manejar interacciones específicas, como menús desplegables o ventanas modales.</p>
+  </li>
+
+  
+  <li>
+    <p><strong mycolor="darkmagenta">[att=val]</strong>: Este selector selecciona todos los elementos que tienen un atributo específico con un valor específico. Es útil cuando deseas aplicar un estilo solo a elementos que tengan un valor de atributo específico. Por ejemplo, si deseas aplicar un estilo solo a los elementos con el atributo `type` con valor `button`, puedes hacerlo de la siguiente manera:</p>
+
+    <pre format="code">
+
+      [type="button"] {
+        /* Estilos para elementos con type="button" */
+      }
+    </pre>
+
+    <p><strong>Situación real</strong>: Puedes usar este selector para aplicar estilos solo a los botones en un formulario, lo que ayuda a mejorar la apariencia y la usabilidad de los botones.</p>
+
+  </li>
+  
+  <li>
+
+    <p><strong mycolor="darkmagenta">[att~=val]</strong>: Este selector selecciona elementos cuyo atributo contiene un valor específico como una palabra completa o parcial, separada por espacios. Es útil cuando deseas seleccionar elementos que tengan ciertas palabras clave en un atributo. Por ejemplo, si deseas aplicar un estilo a todos los elementos con la clase `my-class` en una lista de clases separadas por espacios, puedes hacerlo de la siguiente manera:</p>
+
+
+    <pre format="code">
+
+      [class~="my-class"] {
+        /* Estilos para elementos con la clase "my-class" en su lista de clases */
+      }
+    </pre>
+
+
+    <p><strong>Situación real</strong>: Puedes usar este selector para aplicar estilos a elementos que comparten una palabra clave específica en su atributo de clase, como resaltar todos los elementos con la clase error en un formulario de validación.</p>
+  </li>
+  <li>
+    <p><strong mycolor="darkmagenta">[att|=val]</strong>: Este selector selecciona elementos cuyo atributo tiene un valor que coincide con el valor especificado o comienza con el valor especificado seguido de un guión (-). Es útil cuando deseas seleccionar elementos con atributos de idioma, como los atributos lang. Por ejemplo, si deseas aplicar un estilo a todos los elementos con el atributo lang igual a "en" o que comience con "en-", puedes hacerlo de la siguiente manera:</p>
+
+    <pre format="code">
+      
+      [lang|="en"] {
+          /* Estilos para elementos con el atributo lang igual a "en" o que comienza con "en-" */
+      }
+    </pre>
+
+    <p><strong>Situación real</strong>: Puedes usar este selector para aplicar estilos a elementos de un sitio web en un idioma específico o subidioma, como resaltar elementos en inglés en una página multilingüe.</p>
+
+
+  </li>
+  </ol>
+
+  <h2>Ejemplo:</h2>
+  <div mybool="True">
+
+    <p mybool="True">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil eveniet at praesentium iste, culpa, inventore deserunt quasi excepturi repudiandae ipsam distinctio. Nisi molestias, voluptate consectetur esse facere at eum. Voluptas.</p>
+
+    <p mybool="False">Atque facilis, corporis aliquid in autem repudiandae provident, iure ad eos magni vero saepe dicta quisquam quis ex recusandae beatae at? Tempore, reprehenderit autem! Voluptatibus eum voluptas vero. Suscipit, assumenda.</p>
+    
+    <p mybool="True">Sed sit obcaecati eum cumque sequi non modi ad error sunt eius optio explicabo quis, necessitatibus id dolore officiis enim ipsa similique. Magni autem, ea impedit fugit ab est repudiandae.</p>
+    
+    <p mybool="False">Consectetur excepturi dicta odit possimus praesentium maxime quasi tenetur, enim impedit illo doloremque soluta repudiandae voluptate explicabo accusantium cum odio rem! Voluptatibus nulla quibusdam omnis amet necessitatibus asperiores deleniti voluptas?</p>
+    
+    <p mybool="Eu-non-sei" myColor="Coral">Perspiciatis amet ipsa ad voluptatibus error expedita esse praesentium consequatur vel pariatur vitae deleniti quod, non quae autem illo iste aut, optio illum similique doloremque atque repudiandae quam! Expedita, sequi.</p>
+  </div>
+    
+  </body>
+  </html>

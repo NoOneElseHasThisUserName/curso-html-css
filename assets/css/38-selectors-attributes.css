@@ -1,0 +1,29 @@
+div[mybool="True"] {
+  color:blue
+}
+
+p[mybool="True"] {
+  color: green;
+}
+
+p[mybool="False"] {
+  color: red;
+}
+
+p[myColor="Yellow"] {
+  color: yellow;
+}
+
+p[myColor="Coral"] {
+  color: coral;
+}
+
+strong[mycolor="darkmagenta"] {
+  color: darkmagenta;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+[format="code"]{
+  background-color: lightgrey;
+}
