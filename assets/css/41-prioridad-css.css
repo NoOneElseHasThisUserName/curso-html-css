@@ -1,3 +1,7 @@
+pre {
+  background-color: lightgrey;
+}
+
 /* Selectores del mismo tipo con propiedades en conflicto */
 .fondo-gris {
  background-color: grey;
@@ -34,12 +38,17 @@ p {
   background-color: pink;
 }
 
+/* Selector de ID vs selector de clase vs selector de atributo
+ */
+#google {
+  color: crimson;
+} 
 
+.texto-azul {
+  color: blue;
+}
 
-
-
-
-#bg-gris {
-  background-color: grey;
+[target="_blank"] {
+  color: blueviolet;
 }
 
