@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="assets/css/41-prioridad-css.css" type "text/css">
+  <title>Prioridades en CSS</title>
+</head>
+<body>
+
+  <h1>Prioridades en CSS</h1>
+
+  <h2>Selectores del mismo tipo con propiedades en conflicto</h2>  
+  <p>La aplicación de CSS dependerá del orden en el archivo .css</p>
+
+  <p>Normalmente el último selector involucrado en aparecer eN el .css será el aplicado</p>
+
+  <div class="fondo-gris fondo-amarillo">
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Modi ipsum quidem deleniti alias esse eaque inventore natus, quam ea beatae deserunt fugit aliquam repudiandae tenetur. Veritatis vero consequatur modi excepturi?</p>
+  </div>
+    
+  <h2>Selector de tipo vs selector de clase</h2>
+
+  <p>Al ser el selector de clase más específico que el selector de tipo, se aplicará el estilo de la clase</p>
+
+  <div>
+    <p class="texto-verde">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Modi ipsum quidem deleniti alias esse eaque inventore natus, quam ea beatae deserunt fugit aliquam repudiandae tenetur. Veritatis vero consequatur modi excepturi?</p>
+  </div>
+
+
+
+  <h2>Selector de ID vs selector de clase</h2>
+  <p>Al ser el selector de ID más específico que el selector de clase, se aplicará el estilo del ID</p>
+  
+  <hr>
+  <p><strong>NOTA:</strong></p>
+  <p>Es posible que se defina un selector de clase y un selector de ID con el mismo nombre</p>. 
+  
+  <pre>
+    .fondo-gris {
+      background-color: grey;
+     }
+     
+     ...
+
+     #fondo-gris {
+       background-color: grey;
+     }
+  </pre>
+  <p>No es muy recomendable seguir esta práctica!</p>
+  <hr>
+
+  <div>
+    <p id="bg-pink"" class="fondo-amarillo">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Modi ipsum quidem deleniti alias esse eaque inventore natus, quam ea beatae deserunt fugit aliquam repudiandae tenetur. Veritatis vero consequatur modi excepturi?</p>
+  </div>
+  
+</body>
+</html>
