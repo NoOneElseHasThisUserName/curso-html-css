@@ -42,3 +42,13 @@
 ul {
   margin-left: var(--margen); /* ← Variable global */
 }
+
+.codigo-fuente{
+  --color-fondo: lightgrey;
+}
+
+
+.preformateado {
+  background-color: var(--color-fondo);
+  padding-top: 1em;
+}
