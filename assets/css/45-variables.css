@@ -1,0 +1,44 @@
+/* BEGIN --- Variables globales */
+:root {
+  --margen: 100px
+}
+/* END --- Variables globales */
+
+
+/* BEGIN --- Variables en contexto definido */
+.tool-box {
+  --rojo: red;
+  --verde: #0f0;
+  --azul: rgba(0, 0, 255, 1);
+  --chocolate: rgb(98, 59, 9);
+
+  --grande: 40px;
+  --mediano: 20px;
+  --pequeno: 10px;
+}
+/* END --- Variables en contexto definido */
+
+
+/* Selectores */
+#rojo-grande {
+  color: var(--rojo, fuchsia);
+  font-size: var(--grande);
+}
+
+.verde-mediano {
+  color: var(--verde, fuchsia);
+  font-size: var(--mediano);
+}
+
+[attr="azul-pequeno"] {
+  color: var(--azul, fuchsia);
+  font-size: var(--pequeno);
+}
+
+[attr="text-chocolate"] {
+  color: var(--chocolate);
+}
+
+ul {
+  margin-left: var(--margen); /* ← Variable global */
+}
